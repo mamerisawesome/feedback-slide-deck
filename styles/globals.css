@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #34db74; /* You can change this to your desired primary color */
+}
+
+.reveal h2 {
+  color: var(--primary-color);
+}
+
+.reveal h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.reveal ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.reveal li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.reveal li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns > div {
+  width: 45%;
+}
+
+.reveal .slides section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
